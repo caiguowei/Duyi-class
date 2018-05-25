@@ -6,7 +6,7 @@
 </head>
 <body>
     <script type="text/javascript">
-        var n = parseInt(window.prompt('input'));
+//        var n = parseInt(window.prompt('input'));
         // 1 * 2
         // 1 * 2 * 2
         // 1 * 2 * 2 * 2
@@ -33,6 +33,12 @@
         var b = parseInt(window.prompt('input'));
         var c = parseInt(window.prompt('input'));
         
+        if(a > b && b > c)
+            document.write(a);
+        if(b > a && a > c)
+            document.write(b);
+        if(c > a && c > a)
+            document.write(c);
         
         
     </script>
