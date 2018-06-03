@@ -29,18 +29,72 @@
 //        document.write(mul);
     
         //a, b, c  取最大的值
-        var a = parseInt(window.prompt('input'));
-        var b = parseInt(window.prompt('input'));
-        var c = parseInt(window.prompt('input'));
+//        var a = parseInt(window.prompt('input'));
+//        var b = parseInt(window.prompt('input'));
+//        var c = parseInt(window.prompt('input'));
+//        
+//        if(a > b && b > c)
+//            document.write(a);
+//        if(b > a && a > c)
+//            document.write(b);
+//        if(c > a && c > a)
+//            document.write(c);
         
-        if(a > b && b > c)
-            document.write(a);
-        if(b > a && a > c)
-            document.write(b);
-        if(c > a && c > a)
-            document.write(c);
+        //婓波那契额数列  后一个数是前两个数之和
+//        var n = parseInt(window.prompt('input'));
+//        var first = 1,
+//            second = 1,
+//            third;
+//        if(n > 2){
+//            for(var i = 0; i < n-2;i++){
+//            third = first + second;
+//            first = second;
+//            second = third;
+//        }
+//        document.write(third);
+//        }else{
+//            document.write(1);
+//        }
+        //有一个判断质数的算法 只能被益和自身整除
+//        var count = 0;
+//        // 这个for循环是为了把1 - 100的数取出来
+//        for(var i = 1; i < 100; i ++){
+//            //看看每一个i是否是质数 只把除以1和本身余为0的数（质数）取出来
+//            for(var j = 1; j <= i; j++){
+//               if(i % j == 0){
+//                   count ++;
+//               } 
+//          }
+//            // 只有两次被除余为0的才提取出来
+//            if(count == 2){
+//                document.write(i + " ");
+//            }
+//            //至0为下次循环
+//            count = 0;
+//        }
         
+        console.log('a' + ' : ' + typeof('a'));
+       console.log('undefined' + ' : ' + typeof(undefined));
+        console.log('NaN' + ' : ' + typeof(NaN)); //NaN 值为0 所以是nub类型
+        console.log('null' + ' : ' + typeof(null));
+        console.log('NaN' + ' : ' + typeof(NaN));
+        
+        var a = '123abc';
+        console.log('+123abc' + ' : ' + typeof(+a));
+        console.log('!!123abc' + ' : ' + typeof(!!a));
+        console.log('a+""' + ' : ' + typeof(a+""));
+        console.log('1=="1"' + ' : ' + (1 == '1'));
+        console.log(NaN == NaN);
+        console.log(NaN == undefined);
+        console.log('"11"+11' + ' : ' + ('11' + 11));
+        console.log('1==="1"' + ' : ' +(1 === '1'));
+        console.log('parseInt("123abc")' + '：' + parseInt('123abc'));
+        
+        var num = 1236656.585686646;
+        console.log('num.toFixed(3)' + ':' + num.toFixed(3));
         
     </script>
+     
+    
 </body>
 </html>
